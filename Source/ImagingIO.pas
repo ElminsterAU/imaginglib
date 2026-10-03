@@ -54,9 +54,6 @@ type
   end;
 
   TImagingIOStream = class(TStream)
-  private
-    FIO: TIOFunctions;
-    FHandle: TImagingHandle;
   public
     constructor Create(const IOFunctions: TIOFunctions; Handle: TImagingHandle);
   end;

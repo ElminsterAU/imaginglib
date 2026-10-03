@@ -169,7 +169,7 @@ var
         end;
       end;
       // set position in source to real end of compressed data
-      Seek(Handle, -(BufSize - (PtrUInt(Src) - PtrUInt(Buffer))),
+      Seek(Handle, (PByte(Src) - PByte(Buffer)) - BufSize,
         smFromCurrent);
       FreeMem(Buffer);
     end;

@@ -559,8 +559,6 @@ begin
       exit;
     end;
   end;
-{NEED_DUMMY_RETURN - Delphi2+ dumb compilers complain without this }
-  inflate_codes := Z_STREAM_ERROR;
 end;
 
 

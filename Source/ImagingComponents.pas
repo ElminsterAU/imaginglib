@@ -663,8 +663,8 @@ var
   LineLazBytes: LongInt;
 {$ENDIF}
 begin
-  Format := ifUnknown;
 {$IFDEF COMPONENT_SET_LCL}
+  Format := ifUnknown;
   // In the current Lazarus 0.9.10 Bitmap.PixelFormat property is useless.
   // We cannot change bitmap's format by changing it (it will just release
   // old image but not convert it to new format) nor we can determine bitmaps's
